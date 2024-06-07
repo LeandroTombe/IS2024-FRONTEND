@@ -22,7 +22,7 @@ export const SignIn = () => {
     onSubmit: async ({ email, password }) => {
       try {
         dispatch(signInStart());
-        const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signin`, {
+        const res = await axios.post(`is2024-frontend-production-production.up.railway.app/api/auth/signin`, {
           email: email.toLowerCase(),
           password,
         });

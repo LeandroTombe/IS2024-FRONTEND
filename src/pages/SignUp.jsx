@@ -31,7 +31,7 @@ export const SignUp = () => {
     onSubmit: async ({ username, email, password }) => {
       try {
         dispatch(signUpStart());
-        const res = await axios.post(`is2024-frontend-production-production.up.railway.app/api/auth/signup`, {
+        const res = await axios.post(`http://pruebaintegracionc-production.up.railway.app/api/auth/signup`, {
           username: username,
           email: email,
           password: password,
